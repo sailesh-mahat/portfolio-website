@@ -5,25 +5,22 @@ Text Color (Dark Gray): #2b2b2b;
 Primary Color: #114a4c;
 Secondary Color: #c18e8c;
  */
- :root {
-   --primary-color: #357b70;
-   --secondary-color: #e0b354;
-   --dark-grey: #2b2b2b;
-   --body-background-color: #edeff0;
-   --primary-color: #114a4c;
-   --link-color-visited: #000000;
-   --hover-focus-color: #f36b0a;
-   --link-active-color: #bb1f1f;
-   --text-color-lighter: #ffffff;
-   --button-secondary-bg-color: #c18e8c;
-   --button-secondary-color: #2b2b2b;
-   --span-color: #000000;
-   --font-size: 16px;
-   --font-weight: 700;
-
-
-
- }
+:root {
+  --primary-color: #357b70;
+  --secondary-color: #e0b354;
+  --dark-grey: #2b2b2b;
+  --body-background-color: #edeff0;
+  --primary-color: #114a4c;
+  --link-color-visited: #000;
+  --hover-focus-color: #f36b0a;
+  --link-active-color: #bb1f1f;
+  --text-color-lighter: #fff;
+  --button-secondary-bg-color: #c18e8c;
+  --button-secondary-color: #2b2b2b;
+  --span-color: #000;
+  --font-size: 16px;
+  --font-weight: 700;
+}
 
 body {
   background-color: var(--body-background-color);
@@ -34,7 +31,7 @@ body {
 }
 
 h1 {
-  font-size: 30px; 
+  font-size: 30px;
   font-weight: var(--font-weight);
   line-height: 3.3;
 }
@@ -93,9 +90,9 @@ button:hover, button:focus {
 }
 
 .button__secondary {
-    background-color: var(--button-secondary-bg-color);
-    color: var(--button-secondary-color);
-  }
+  background-color: var(--button-secondary-bg-color);
+  color: var(--button-secondary-color);
+}
 
 .web {
   padding:4px;
@@ -296,7 +293,7 @@ button:focus,
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
 
-.contact{
+.contact {
   max-width: 700px;
   margin: 0 auto;
 }
@@ -306,11 +303,19 @@ table {
   border-spacing: 40px 0;
 }
 
-td{
+td {
   padding: 10px 0;
   text-align: center;
 }
 
 a {
   color: var(--primary-color);
+}
+
+.slills {
+  text-align: center;
+}
+
+.worktitle {
+  text-align: center;
 }
