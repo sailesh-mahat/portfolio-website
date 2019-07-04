@@ -1,0 +1,321 @@
+/*
+Colors used
+
+Text Color (Dark Gray): #2b2b2b;
+Primary Color: #114a4c;
+Secondary Color: #c18e8c;
+ */
+:root {
+  --primary-color: #357b70;
+  --secondary-color: #e0b354;
+  --dark-grey: #2b2b2b;
+  --body-background-color: #edeff0;
+  --primary-color: #114a4c;
+  --link-color-visited: #000;
+  --hover-focus-color: #f36b0a;
+  --link-active-color: #bb1f1f;
+  --text-color-lighter: #fff;
+  --button-secondary-bg-color: #c18e8c;
+  --button-secondary-color: #2b2b2b;
+  --span-color: #000;
+  --font-size: 16px;
+  --font-weight: 700;
+}
+
+body {
+  background-color: var(--body-background-color);
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  font-size: var(--font-size);
+  line-height: 1.6;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: var(--font-weight);
+  line-height: 3.3;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: var(--font-weight);
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: var(--font-weight);
+}
+
+a {
+  color: var(--primary-color);
+}
+
+a:visited {
+  /* visited link */
+  color: var(--link-color-visited);
+}
+
+a:hover, a:focus {
+  /* No underlining when hovering or focusing over a link */
+  text-decoration: none;
+  color: var(--hover-focus-color);
+}
+
+a:active {
+  /* selected link */
+  color: var(--link-active-color);
+}
+
+button {
+  /* overwrites browser defaults and resets the border */
+  border: none;
+  /* takes the font from the outer container */
+  font-family: inherit;
+  /* styles the background color, font color, and text decoration (underline, etc.) of the button */
+  background-color: var(primary-color);
+  color: var(--text-color-lighter);
+  text-decoration: none;
+  /*adds spacing to the button */
+  padding: 10px;
+  border-radius: 3px;
+  /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+button:hover, button:focus {
+  /* lets the mouse appear as a hand when hovering over the button */
+  cursor: pointer;
+  /* reduces the opacity of the button to 80% */
+  opacity: 0.8;
+}
+
+.button__secondary {
+  background-color: var(--button-secondary-bg-color);
+  color: var(--button-secondary-color);
+}
+
+.web {
+  padding:4px;
+  border-radius:4px;
+  color: var(--span-color);
+  background-color: var(--text-color-lighter);
+}
+
+.navigation-list__item--active {
+  text-decoration: none;
+}
+
+.profile__portrait {
+  float: left;
+  width: 250px;
+  margin-right: 40px;
+  border-radius: 50%;
+}
+
+.page-footer {
+  clear: both;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.profile {
+  padding-top: 80px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.page-header {
+  display: flex;
+  width: 100%;
+  padding: 20px;
+}
+
+.page-header__item {
+  flex: 0 1 200px;
+}
+
+.page-header__item:last-child {
+  flex-grow: 1;
+  text-align: right;
+}
+
+.navigation-list {
+  list-style-type: none;
+}
+
+.navigation-list li {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+/* Grid fallback*/
+
+.grid__item {
+  display: inline-block;
+  width: 33%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.grid__item {
+  background-color: lightgray;
+  padding: 10px;
+  width: auto;
+}
+
+.grid__item:last-child {
+  grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  /*could also be written simply like
+  .grid__item:last-child {
+  grid-column: 3 / 3;
+  grid-row: 1 / 3;
+  */
+}
+
+@media all and (max-width: 500px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media all and (min-width: 500px) and (max-width: 750px){
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media all and (max-width: 750px) {
+  .grid {
+    grid-gap: 10px;
+  }
+  .grid__item:last-child {
+    grid-column: auto / auto;
+    grid-row: auto / auto;
+  }
+  h1 {
+    font-size: 22px;
+  }
+}
+
+.button, button {
+  /* overwrites browser defaults */
+  /* resets the border */
+  border: none;
+  display: inline-block;
+  /* takes the font from the outer container */
+  font-family: inherit;
+  /* style button */
+  background-color: var(--primary-color);
+  color: var(--text-color-lighter);
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  /* width of the border, type, color */
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  transition: 0.2s opacity;
+}
+
+button:hover,
+button:focus,
+.button:hover,
+.button:focus {
+  /* lets the mouse appear as a hand when hovering over the button */
+  cursor: pointer;
+  /* reduces the opacity of the button to 80% */
+  opacity: 0.8;
+}
+
+.nepal__landmark {
+  width: 400px;
+  margin-right: 40px;
+}
+
+.about__body {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+@keyframes color-change {
+  0% {
+    fill: #edc655;
+  }
+  50% {
+    fill: #fcffad;
+  }
+  100% {
+    fill: #f76414;
+  }
+}
+
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+
+@keyframes cloud-move {
+  from {
+    transform: translate(0, 50px);
+  }
+  to {
+    transform: translate(200px, 50px);
+  }
+}
+
+.cloud-front {
+  animation-duration: 30s;
+  animation-name: cloud-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {
+    transform: translate(446px, 48px);
+  }
+  to {
+    transform: translate(100px, 48px);
+  }
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+.contact {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 40px 0;
+}
+
+td {
+  padding: 10px 0;
+  text-align: center;
+}
+
+a {
+  color: var(--primary-color);
+}
+
+.slills {
+  text-align: center;
+}
+
+.worktitle {
+  text-align: center;
+}
