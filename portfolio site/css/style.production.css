@@ -198,6 +198,14 @@ button:hover, button:focus {
   */
 }
 
+.work_image{
+  height: 150px;
+  width: 100%;
+}
+.work_link{
+  text-decoration: underline;
+}
+
 @media all and (max-width: 500px) {
   .grid {
     -ms-grid-columns: 1fr;
