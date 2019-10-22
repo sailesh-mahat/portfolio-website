@@ -14,6 +14,46 @@ body {
   line-height: 1.6;
 }
 
+.homebanner{
+  background-image: url(../img/homebanner2.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 400px;
+  width:100%;
+  background-repeat: no-repeat;
+  border-radius: 15px;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #fff;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #71c7ec;
+  color: white;
+}
+
 a {
   text-decoration: none;
 }
@@ -101,7 +141,7 @@ button:hover, button:focus {
 
 .profile__portrait {
   float: left;
-  width: 250px;
+  width: 270px;
   margin-right: 40px;
   border-radius: 50%;
 }
@@ -120,7 +160,7 @@ button:hover, button:focus {
 
 .profile {
   padding-top: 80px;
-  max-width: 700px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -141,6 +181,15 @@ button:hover, button:focus {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 200px;
           flex: 0 1 200px;
+          border-radius: 15px;
+
+}
+
+#logosm{
+  position: relative;
+  top:50px;
+  left: 50px;
+  max-width:100%;
 }
 
 .page-header__item:last-child {
@@ -162,8 +211,10 @@ button:hover, button:focus {
 /* Grid fallback*/
 
 .grid__item {
+  background-image: url("../img/woods.jpg");
   display: inline-block;
   width: 33%;
+  border-radius: 15px;
 }
 
 .grid {
@@ -172,12 +223,12 @@ button:hover, button:focus {
   -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px;
-  max-width: 900px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
 .grid__item {
-  background-color: lightgray;
+  background-color: #C6E2FF;
   padding: 10px;
   width: auto;
 }
@@ -407,4 +458,16 @@ a {
 
 .worktitle {
   text-align: center;
+}
+
+.t1{
+  margin:auto;
+  max-width:75%;
+}
+
+.skills{
+  background-image: url("../img/cloud.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width= 100%;
 }

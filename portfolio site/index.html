@@ -6,12 +6,20 @@
       <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
       <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
       <link rel="stylesheet" type="text/css" href="css/style.production.css">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
+    <div class="topnav">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#contact">Contact</a>
+    </div>
     <header class="page-header">
-      <img src="img/LogoMakr_9OrW9f.png" alt="sailesh-mahat-logo" height="45" width="100" class="page-header__item">
-      <nav class="main-navigation page-header__item">
+      <a name="home"></a>
+      <div class="homebanner">
+      <img src="img/logo3.png" alt="sailesh-mahat-logo" height="200" width="200" class="page-header__item" id="logosm">
+      <!--<nav class="main-navigation page-header__item">
         <ul role="menubar" class="navigation-list">
           <li role="presentation">
             <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Home</a>
@@ -26,23 +34,122 @@
             <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
           </li>
         </ul>
-      </nav>
+      </nav>-->
+    </div>
     </header>
+  </img>
+  <a name="about"></a>
   <div class="profile">
-    <img src="img/sailesh-portfolio-portrait.png" class="profile__portrait" alt="sailesh-mahat-portrait">
-    <h2>Hello World! I am Sailesh Mahat and I am an aspiring <span class="web">web</span> developer.</h2>
+    <img src="img/saileshportrait.jpg" class="profile__portrait" alt="sailesh-mahat-portrait">
+    <h2>Hello World! I am Sailesh Mahat and I am a <span class="web">web</span> developer from the land of the Himalayas.</h2>
+    <h3>My hobbies include photography and hiking</h3>
     <p><a href="about.html">Click here to find out more about me</a></p>
-    <button onclick="location.href='contact.html'" class="button__secondary">Contact me!</button>
-    <button onclick="location.href='work.html'">Check out my work!</button>
+
+    <button onclick="location.href='#contact'" class="button__secondary">Contact me!</button>
+    <button onclick="location.href='#work'">Check out my work!</button>
+    <button onclick="location.href='files/CV.pdf'">Download my CV</a>
   </div>
     <footer class="page-footer">
       <p>Find me on</p>
       <div class="social-media">
-        <img src="img/iconmonstr-facebook-3.svg" alt="Facebook logo">
-        <img src="img/iconmonstr-twitter-1.svg" alt="Twitter logo">
-        <img src="img/iconmonstr-linkedin-3.svg" alt="LinkedIn logo">
+        <a href="https://www.facebook.com/sailesh.mahat"><img src="img/iconmonstr-facebook-3.svg" alt="Facebook logo"></a>
+        <a href="https://github.com/sailesh-mahat"><img src="img/iconmonstr-github-1.svg" alt="Github logo"></a>
+        <a href="https://www.linkedin.com/in/sailesh-mahat-79518b53/"><img src="img/iconmonstr-linkedin-3.svg" alt="LinkedIn logo"></a>
       </div>
     </footer>
+    <div class="skills">
+      <h1 style="text-align:center">Skills</h1>
+      <div style="overflow-x:auto;">
+        <table class="t1">
+          <tr>
+            <th><img src="img/HTML5_Logo.png"></th>
+            <th><img src="img/csslogo.png"></th>
+            <th><img src="img/javascript_logo.png"></th>
+            <th><img src="img/jquery-icon.png"></th>
+          </tr>
+          <tr>
+            <th><img src="img/react.png" style="width:200px;height:230px"></th>
+            <th><img src="img/angularjs.png"></th>
+            <th><img src="img/vuejs.png" style="width:150px;height:150px"></th>
+            <th><img src="img/bootstrap.png"></th>
+          </tr>
+          <tr>
+            <th><img src="img/nodejs.png" style="width:200px;height:130px"></th>
+            <th><img src="img/postgresql.png" style="width:150px;height:150px"></th>
+            <th><img src="img/mongodb.png" style="width:150px;height:180px"></th>
+            <th><img src="img/sass.png"></th>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <a name="work"></a>
+    <h1 class="worktitle">Work</h1>
+     <div class="grid">
+        <!-- Grid items will live here -->
+        <div class="grid__item">
+          <h2>Pokedex</h2>
+          <p>
+            This app contains a list of Pokemons whose features can be seen after clicking on their buttons.It was created with the help of an external API.</p>
+            <p>Technologies used: Javascript, jQuery</p>
+          <!--  <img src= "img/pokedex.png" class="work_image"><br> -->
+          <a href="https://sailesh-mahat.github.io/Pokedex-jQuery/" class="work_link">Try the app</a><br>
+          <a href="https://github.com/sailesh-mahat/Pokedex-jQuery" class="work_link">See project on GitHub</a>
+        </div>
+        <div class="grid__item">
+          <h2>Myflix movie database</h2>
+          <p>
+             This app contains several movies and their infos. Users can  register and add movies to their favorite list.
+          </p>
+          <p> Technologies used: MongoDB, Express, React, NodeJs</p><br><br>
+        <!--  <img src= "img/myflix.png" class="work_image"><br> -->
+          <a href="https://sailesh-mahat.github.io/movie_api/" class="work_link">Try the app</a><br>
+          <a href="https://github.com/sailesh-mahat/movie_api" class="work_link">See project on GitHub</a>
+        </div>
+        <div class="grid__item">
+          <h2>My awesome quiz app</h2>
+          <p>
+            A user is able to take quizzes on different topics and the result is also calculated at the end.
+          </p>
+          <p>Technologies used: Angular</p>
+        <!--    <img src= "img/quiz.png" class="work_image"><br> -->
+          <a href="https://sailesh-mahat.github.io/my-awesome-quiz-app/welcome" class="work_link">Try the app</a><br>
+          <a href="https://github.com/sailesh-mahat/my-awesome-quiz-app" class="work_link">See project on GitHub</a>
+        </div>
+        <div class="grid__item">
+          <h2>To-do App</h2>
+          <p>
+            It is a basic to-do app where one can add, remove, check-off their daily to-do activities.
+          </p>
+          <p>Technologies used: Angular</p>
+          <!--  <img src= "img/todo.png" class="work_image"><br> -->
+          <a href="https://todoapp-vuejs.netlify.com/" class="work_link">Try app</a><br>
+          <a href="https://github.com/sailesh-mahat/todo-app-vue.js" class="work_link">See project on GitHub</a>
+        </div>
+
+        <div class="grid__item">
+          <h2>Your Project?</h2>
+          <p>
+            Do you have a project for me. I am specialized in several javascript frameworks like React, Angular, and Vue.js. Feel free to contact me
+            if you need to get your website done or an app built. With my expertise, I can definitely help you get the right thing as per your needs.
+          </p>
+          <a href="#contact" class="work_link">Contact me</a>
+        </div>
+    </div>
+  </section>
+  <a name="contact"></a>
+  <div style="text-align:center;background-color:lightgray">
+  <h1>Contact</h1>
+    Email: <a href="mailto:sailesh@live.com">sailesh@live.com</a><br>
+    Tel: <a href="tel:+491234567">+49 1234567</a><br>
+    Skype: <a href="skype:mahat.sailesh"> mahat.sailesh</a><br>
+    <a href="mailto:sailesh@live.com">Send me and email</a><br><br>
+    <p>Find me on</p>
+    <div class="social-media">
+      <a href="https://www.facebook.com/sailesh.mahat"><img src="img/iconmonstr-facebook-3.svg" alt="Facebook logo"></a>
+      <a href="https://github.com/sailesh-mahat"><img src="img/iconmonstr-github-1.svg" alt="Github logo"></a>
+      <a href="https://www.linkedin.com/in/sailesh-mahat-79518b53/"><img src="img/iconmonstr-linkedin-3.svg" alt="LinkedIn logo"></a>
+    </div>
+  </div>
     <script src="js/tota11y.min.js"></script>
   </body>
 </html>
