@@ -18,8 +18,9 @@ body {
   background-image: url(../img/boat2.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
-  height: 700px;
+  background-position: center center;
   width:100%;
+  height: 650px;
   background-repeat: no-repeat;
   border-radius: 15px;
 }
@@ -56,6 +57,8 @@ body {
 
 a {
   text-decoration: none;
+  color: #114a4c;
+
 }
 
 h1 {
@@ -74,11 +77,10 @@ h3 {
   font-size: 18px;
   font-weight: 700;
   text-align: center;
-
 }
 
-a {
-  color: #114a4c;
+p {
+  text-align: center;
 }
 
 a:visited {
@@ -89,7 +91,7 @@ a:visited {
 a:hover {
   /* No underlining when hovering or focusing over a link */
   text-decoration: none;
-  color: #f36b0a;
+  color: #fff;
 }
 
 a:focus {
@@ -128,22 +130,12 @@ button:hover, button:focus {
   opacity: 0.8;
 }
 
-.name-heading{
-  text-align: center;
-  font-size: 42px;
-  color: white;
-  text-shadow:2px 2px #000;
-}
 
-.sub-heading{
-  text-align: center;
-  color: white;
-  text-shadow:2px 2px #000;
-}
 
 .intro-buttons{
   text-align: center;
-margin: auto;
+  margin: auto;
+  padding-bottom: 10px;
   }
 
 .button__secondary {
@@ -163,7 +155,10 @@ margin: auto;
 }
 
 .profile__portrait {
-  width: 270px;
+  background-position: center center;
+  margin-top: 20px;
+  padding: 20px;
+  width: 250px;
   display: block;
     margin-left: auto;
     margin-right: auto;
@@ -185,7 +180,7 @@ margin: auto;
 }
 
 .profile {
-  padding-top: 80px;
+  padding-top: 30px;
   max-width: 1000px;
   margin: 0 auto;
 }
@@ -278,16 +273,20 @@ margin: auto;
   */
 }
 
-.images-container{
+.images-container {
 text-align: left;
 
 }
 
-.work_image{
+.work_image {
   height: 150px;
   width: 100%;
 }
-.work_link{
+
+.work_link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-decoration: underline;
 }
 
@@ -354,6 +353,7 @@ button {
   -webkit-transition: 0.2s opacity;
   -o-transition: 0.2s opacity;
   transition: 0.2s opacity;
+  margin-bottom: 10px;
 }
 
 button:hover,
@@ -482,16 +482,27 @@ td {
   text-align: center;
 }
 
-a {
-  color: #114a4c;
+
+.name-heading{
+  text-align: center;
+  font-size: 42px;
+  color: white;
+  text-shadow:2px 2px #000;
+  margin-top: 0px;
 }
 
-.slills {
+.sub-heading{
   text-align: center;
+  color: white;
+  text-shadow:2px 2px #000;
 }
 
-.worktitle, .myflixtitle {
+
+
+.worktitle, .myflixtitle, .skills, .contacttitle {
   text-align: center;
+  text-shadow:1px 1px #F47D07;
+
 }
 
 .myflix-text{
@@ -509,5 +520,6 @@ a {
   background-image: url("../img/temple.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-position: center center;
   width= 100%;
 }
